@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Formulario de predicción</title>
+</head>
+<body>
+    <h1>Formulario de predicción</h1>
+    <form method="post">
+        {% csrf_token %}
+        <!-- Aquí debes incluir todos los campos necesarios del formulario -->
+        <label for="CulmenLength">CulmenLength:</label>
+        <input type="text" name="CulmenLength" value="49.1"><br><br>
+
+        <label for="CulmenDepth">CulmenDepth:</label>
+        <input type="text" name="CulmenDepth" value="4.8"><br><br>
+
+        <label for="FlipperLength">FlipperLength:</label>
+        <input type="text" name="FlipperLength" value="1220"><br><br>
+
+        <label for="BodyMass">BodyMass:</label>
+        <input type="text" name="BodyMass" value="5150"><br><br>
+
+    
+
+        <!-- Resto de campos del formulario -->
+
+        <input type="submit" value="Predecir">
+    </form>
+</body>
+</html>
